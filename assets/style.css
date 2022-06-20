@@ -41,7 +41,6 @@ header ul li{
 .flexion-section { /* All major content sections, About, Work, Contact*/
     display: flex;
     flex: 1 1 0;
-    background-color: yellow;
 }
 
 .section-heading { /* the box containing only the words work, About and Contact me*/
@@ -52,6 +51,11 @@ header ul li{
 }
 
 .content-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.work-section {
     background-color: brown;
     display: flex;
     flex-wrap: wrap;
@@ -73,21 +77,25 @@ header ul li{
     background-color:blue;
 }
 
-
-.flexion-section li {
-    list-style-type: none;
-    display: inline;
+.contact-list {
+    margin: auto;
 }
 
-/* figure {
+.contact-list li {
+    list-style-type: none;
+    display: inline;
+    margin: 20px;
+}
+
+figure { /*adapted from css file in Challenge 02 file in UW-VIRT-FSF-FT-06-2022-U-LOLC*/
     height: 300px;
     width: 100%;
     margin: 0;
     background-image: url(https://place-puppy.com/public-images/index-page/image8/210x280-lg.jpg);
     background-size: cover;
     background-position: center;
-} */
-/* 
+}
+
 @media screen and (max-width : 900px){
     header {
         flex-direction: column;
@@ -104,6 +112,8 @@ header ul li{
     .section-heading {
         border-bottom: 5px solid black;
         border-right: 0ch;
+        padding: 0;
+        max-height: 80px;
     }
 
-} */
+}
