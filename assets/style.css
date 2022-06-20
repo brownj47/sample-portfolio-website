@@ -6,26 +6,57 @@ body, html {
 }
 
 header {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(13, 82, 82);
     width: 100%;
 }
 
-header h1 {
-    display: inline-block;
-    background-color: aliceblue;
+h1 {
+    font-size: 60px;
+    margin: 20px;
+    color: aliceblue;
 }
 
 header ul li{
     list-style-type: none;
     font-size: 40px;
     margin: 10px;
+    display: inline;
 
 }
 
 
+
+main section {
+    margin: 0 auto;
+    display: inline-flex;
+    position: relative;
+    background-color: aquamarine;
+}
+
+main section p {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    background-color: blanchedalmond;
+
+}
 
 a {
     text-decoration: none;
     color: aliceblue;
 }
 
+@media screen and (max-width : 900px){
+    header {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    header ul li {
+        display: block;
+        text-align: center;
+    }
+}
