@@ -3,6 +3,7 @@ body, html {
     border: 0;
     margin:0;
     font-family: sans-serif;
+    background-color: thistle;
 }
 
 header {
@@ -27,9 +28,20 @@ header ul li{
 
 }
 
+.flexion-section {
+    display: flex;
+}
 
+/* figure {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    background-image: url(https://place-puppy.com/public-images/index-page/image8/210x280-lg.jpg);
+    background-size: cover;
+    background-position: center;
+} */
 
-main section {
+/* main section {
     margin: 0 auto;
     display: inline-flex;
     position: relative;
@@ -42,7 +54,7 @@ main section p {
     left: 0;
     background-color: blanchedalmond;
 
-}
+} */
 
 a {
     text-decoration: none;
