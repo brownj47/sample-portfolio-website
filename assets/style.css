@@ -11,16 +11,17 @@ body, html {
     background-color: thistle;
 }
 
+
 header {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(13, 82, 82);
+    background-color: rgb(15, 44, 56);
     width: 100%;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 40px;
     margin: 20px;
     color: aliceblue;
 }
@@ -38,13 +39,14 @@ header ul li{
 
 }
 
+
 .flexion-section { /* All major content sections, About, Work, Contact*/
     display: flex;
     flex: 1 1 0;
 }
 
 .section-heading { /* the box containing only the words work, About and Contact me*/
-    border-right: 5px solid black;
+    border-right: 5px solid rgb(15, 44, 56);
     padding-right: 10px;
     flex: 0 0 200px;
     text-align: center;
@@ -56,29 +58,37 @@ header ul li{
 }
 
 .work-section {
-    background-color: brown;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 5px;
 }
 
 .project-card {
     position: relative;
+    width: 50%;
+    border: 5px solid rgb(15, 44, 56);
 }
 
 .project-card p {
     position:absolute;
     bottom: 10px;
-    background-color: whitesmoke;
+    background-color: rgb(15, 44, 56);
+    color: white;
     padding: 5px;
 }
 
 .main-project {
     width: 100%;
-    background-color:blue;
+}
+
+img {
+    width:100%;
+     
 }
 
 .contact-list {
-    margin: auto;
+    margin: 20px auto;
+    
 }
 
 .contact-list li {
@@ -88,12 +98,29 @@ header ul li{
 }
 
 figure { /*adapted from css file in Challenge 02 file in UW-VIRT-FSF-FT-06-2022-U-LOLC*/
-    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center ;
+    height: 400px;
     width: 100%;
     margin: 0;
-    background-image: url(https://place-puppy.com/public-images/index-page/image8/210x280-lg.jpg);
+    background-image: url(https://live.staticflickr.com/5584/15038954529_4cfba3334b_b.jpg);
     background-size: cover;
     background-position: center;
+}
+
+figure h2 {
+    font-size: 30px;
+}
+
+footer {
+    text-align: center;
+}
+footer p {
+    color: aliceblue;
+    max-width: 600px;
+    margin: 0 auto;
+    
 }
 
 @media screen and (max-width : 900px){
@@ -115,5 +142,10 @@ figure { /*adapted from css file in Challenge 02 file in UW-VIRT-FSF-FT-06-2022-
         padding: 0;
         max-height: 80px;
     }
+
+    figure {
+        justify-content: center;
+    }
+
 
 }
