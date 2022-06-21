@@ -1,9 +1,9 @@
-* {
+* { /* chagne formatting to allow boxes to stack correctly*/
     box-sizing: border-box;
 }
 
 
-body, html {
+body, html { /* reset */
     padding: 0;
     border: 0;
     margin:0;
@@ -12,7 +12,7 @@ body, html {
 }
 
 
-header {
+header { /* set color, makes items flex, pushes items apart */
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -20,18 +20,18 @@ header {
     width: 100%;
 }
 
-h1 {
+h1 { /* set h1 size, margin, and color */
     font-size: 40px;
     margin: 20px;
     color: aliceblue;
 }
 
-a {
+a { /* remove link formatting, color links  */
     text-decoration: none;
     color: aliceblue;
 }
 
-header ul li{
+header ul li{ /* remove bullet points, set font size, make spacing, set items inline*/
     list-style-type: none;
     font-size: 40px;
     margin: 10px;
@@ -40,9 +40,9 @@ header ul li{
 }
 
 
-.flexion-section { /* All major content sections, About, Work, Contact*/
+.flexion-section { /* All major content sections, About, Work, Contact, set to flex, make flex items equally share space */
     display: flex;
-    flex: 1 1 0;
+    flex: 1 1 0; 
 }
 
 .section-heading { /* the box containing only the words work, About and Contact me*/
@@ -52,24 +52,30 @@ header ul li{
     text-align: center;
 }
 
-.content-section {
+.content-section { /* set div width, center it*/
     max-width: 600px;
     margin: 0 auto;
 }
 
-.work-section {
+.profile-pic { /* make profile pic small and float right in text*/
+    float: right;
+    max-height: 200px;
+    border: 5px solid rgb(15, 44, 56);
+}
+
+.work-section { /* make work section a flexbox*/
     display: flex;
     flex-wrap: wrap;
     margin-top: 5px;
 }
 
-.project-card {
+.project-card { /* make each section containing the project image take up half the flexbox, give it a border*/
     position: relative;
     width: 50%;
     border: 5px solid rgb(15, 44, 56);
 }
 
-.project-card p {
+.project-card p { /* make text hover over image*/
     position:absolute;
     bottom: 10px;
     background-color: rgb(15, 44, 56);
@@ -77,27 +83,27 @@ header ul li{
     padding: 5px;
 }
 
-.main-project {
+.main-project { /* make main project take up a whole line*/
     width: 100%;
 }
 
-img {
+.work-section img { /* make the image take up a whole div*/
     width:100%;
      
 }
 
-.contact-list {
+.contact-list { /* center contact ul*/
     margin: 20px auto;
     
 }
 
-.contact-list li {
+.contact-list li { /* formatting list items/style*/
     list-style-type: none;
     display: inline;
     margin: 20px;
 }
 
-figure { /*adapted from css file in Challenge 02 file in UW-VIRT-FSF-FT-06-2022-U-LOLC*/
+figure { /*adapted from css file in Challenge 02 file in UW-VIRT-FSF-FT-06-2022-U-LOLC, hero image*/
     display: flex;
     justify-content: flex-end;
     align-items: center ;
@@ -120,30 +126,30 @@ footer p {
     color: aliceblue;
     max-width: 600px;
     margin: 0 auto;
-    
+
 }
 
-@media screen and (max-width : 900px){
-    header {
+@media screen and (max-width : 900px){ /* make project change for small screens*/
+    header { /* center items, make them a column */
         flex-direction: column;
         text-align: center;
         justify-content: center;
     }
-    header ul li {
+    header ul li { /* center items */
         display: block;
         text-align: center;
     }
-    .flexion-section {
+    .flexion-section { /* make items a column */
         flex-direction: column;
     }
-    .section-heading {
+    .section-heading { /* move border from right to bottom */
         border-bottom: 5px solid black;
         border-right: 0ch;
         padding: 0;
         max-height: 80px;
     }
 
-    figure {
+    figure { /* center items*/
         justify-content: center;
     }
 
