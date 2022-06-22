@@ -1,14 +1,10 @@
-* { /* chagne formatting to allow boxes to stack correctly*/
-    box-sizing: border-box;
+:root {  /*define variables*/
+    --primary: rgb(242, 242, 241);
+    --accent: rgb(12, 34, 44);
 }
 
-
-body, html { /* reset */
-    padding: 0;
-    border: 0;
-    margin:0;
-    font-family: sans-serif;
-    background-color: thistle;
+body, html { /*set background color*/
+    background-color: var(--primary);
 }
 
 
@@ -16,19 +12,29 @@ header { /* set color, makes items flex, pushes items apart */
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(15, 44, 56);
+    background-color: var(--accent);
     width: 100%;
 }
 
 h1 { /* set h1 size, margin, and color */
-    font-size: 40px;
+    font-size: 2.5em;
     margin: 20px;
-    color: aliceblue;
+    color: var(--primary);
+}
+
+h2 { /* set h2 size, margin and color*/
+    font-size: 2em;
+    color: var(--accent);
+    margin: 1em;
 }
 
 a { /* remove link formatting, color links  */
     text-decoration: none;
-    color: aliceblue;
+    color: var(--primary);
+}
+
+p { /*set line spacing*/
+    line-height: 1.15em;
 }
 
 header ul li{ /* remove bullet points, set font size, make spacing, set items inline*/
@@ -46,7 +52,7 @@ header ul li{ /* remove bullet points, set font size, make spacing, set items in
 }
 
 .section-heading { /* the box containing only the words work, About and Contact me*/
-    border-right: 5px solid rgb(15, 44, 56);
+    border-right: 5px solid var(--accent);
     padding-right: 10px;
     flex: 0 0 200px;
     text-align: center;
@@ -60,7 +66,7 @@ header ul li{ /* remove bullet points, set font size, make spacing, set items in
 .profile-pic { /* make profile pic small and float right in text*/
     float: right;
     max-height: 200px;
-    border: 5px solid rgb(15, 44, 56);
+    border: 5px solid var(--accent);
 }
 
 .work-section { /* make work section a flexbox*/
@@ -72,14 +78,14 @@ header ul li{ /* remove bullet points, set font size, make spacing, set items in
 .project-card { /* make each section containing the project image take up half the flexbox, give it a border*/
     position: relative;
     width: 50%;
-    border: 5px solid rgb(15, 44, 56);
+    border: 5px solid var(--accent);
 }
 
 .project-card p { /* make text hover over image*/
     position:absolute;
     bottom: 10px;
-    background-color: rgb(15, 44, 56);
-    color: white;
+    background-color: var(--accent);
+    color: var(--primary);
     padding: 5px;
 }
 
@@ -94,7 +100,12 @@ header ul li{ /* remove bullet points, set font size, make spacing, set items in
 
 .contact-list { /* center contact ul*/
     margin: 20px auto;
-    
+}
+
+.contact-list a { /*make links visible and larger in the contact section*/
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .contact-list li { /* formatting list items/style*/
@@ -115,18 +126,21 @@ figure { /*adapted from css file in Challenge 02 file in UW-VIRT-FSF-FT-06-2022-
     background-position: center;
 }
 
-figure h2 {
-    font-size: 30px;
+figure h2 { /*make h2 in igure element larger*/
+    font-size: 1.75em;
 }
 
-footer {
+footer { /*center footer text*/
     text-align: center;
 }
-footer p {
-    color: aliceblue;
+footer p { /*set text color, div width, center div*/
+    color: var(--accent);
     max-width: 600px;
     margin: 0 auto;
 
+}
+footer p a {  /*set footer link color*/
+    color: var(--accent);
 }
 
 @media screen and (max-width : 900px){ /* make project change for small screens*/
