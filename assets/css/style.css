@@ -1,5 +1,5 @@
 :root {  /*define variables*/
-    --primary: rgb(242, 242, 241);
+    --primary: rgb(255, 255, 255);
     --accent: rgb(12, 34, 44);
 }
 
@@ -121,7 +121,7 @@ figure { /*adapted from css file in Challenge 02 file in UW-VIRT-FSF-FT-06-2022-
     height: 400px;
     width: 100%;
     margin: 0;
-    background-image: url(https://live.staticflickr.com/5584/15038954529_4cfba3334b_b.jpg);
+    background-image: url(https://live.staticflickr.com/3114/2918156184_fac2118db6_b.jpg);
     background-size: cover;
     background-position: center;
 }

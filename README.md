@@ -7,6 +7,5 @@ To create this project, I used flexbox, media queries, CSS variables, and many o
 You can view the deployed webpage here: https://github.com/brownj47/sample-portfolio-website
 
 
-### Repository Quality: 13%
 
-* Repository contains quality readme with description, screenshot, link to deployed application.
+![Screenshot of ](./assets/images/sample-portfolio-screenshot.png)
